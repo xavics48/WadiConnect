@@ -102,6 +102,10 @@ DJOSER = {
     'SEND_ACTIVATION_EMAIL': True,
     'PASSWORD_RESET_CONFIRM_URL': 'password/reset/confirm/{uid}/{token}/',
     'TOKEN_MODEL': None,
+    'EMAIL': {
+        'domain': 'WadiConnect.com',  # Update domain
+        'site_name': 'WadiConnect',  # Update site name
+    },
 }
 
 # Email Configuration for Account Activation and Password Reset
@@ -111,8 +115,8 @@ EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_HOST_USER = 'rehankhan.upr@gmail.com'  # Replace with your email
 EMAIL_HOST_PASSWORD = 'urti mvpf lwga bzsz'  # Replace with your email password
-DEFAULT_FROM_EMAIL = 'WadiConnect.com'
-
+DEFAULT_FROM_EMAIL = 'no-reply@WadiConnect.com'
+#DEFAULT_FROM_EMAIL = 'WadiConnect <no-reply@WadiConnect.com>' for name to be wadi connect
 # Site Framework Configuration
 SITE_ID = 1
 
